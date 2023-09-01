@@ -1,56 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Bootstrap Learning</title>
+    <title>Bootstrap Learning Pages</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
     />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div style="display: flex" class="container-fluid">
+        <a
+          href="https://www.fiverr.com/?source=top_nav"
+          style="
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+              sans-serif;
+            color: chartreuse;
+            font-style: italic;
+            font-size: 30px;
+          "
+          class="navbar-brand"
+          >Fiver</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                href="https://www.fiverr.com/?source=top_nav"
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="https://www.fiverr.com/start_selling?source=top_nav"
+                style="font-weight: bold; color: white"
+                class="nav-link"
+                href="#"
+                >Become a Seller</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                style="font-weight: bold; color: white"
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Business Solutions
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    href="https://www.searchmetrics.com/glossary/rankings/#:~:text=Rankings%20in%20SEO%20refers%20to,backlinks%20pointing%20to%20the%20page."
+                    class="dropdown-item"
+                    href="#"
+                    >SEO ranking</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://help.fiverr.com/hc/en-us/articles/360010560118-Achieving-levels"
+                    class="dropdown-item"
+                    href="#"
+                    >how become #1 Seller</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="https://community.fiverr.com/forums/topic/300168-how-to-rank-my-fiverr-gig/#:~:text=Ranking%20your%20Fiverr%20gig%20requires,build%20positive%20reviews%20and%20ratings."
+                    class="dropdown-item"
+                    href="#"
+                    >How to rank gig</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                style="
+                  display: flex;
+                  font-weight: bold;
+                  padding: 8%;
+                  text-decoration: none;
+                  color: white;
+                "
+                href="https://www.fiverr.com/?source=top_nav"
+                >Language</a
+              >
+            </li>
+          </ul>
+
+          <form class="d-flex" role="search">
+            <a
+              style="
+                text-decoration: none;
+                color: chartreuse;
+                margin: 7px;
+                font-size: 20px;
+              "
+              href="https://www.fiverr.com/login?source=top_nav"
+              >sign in</a
             >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-          </li>
-        </ul>
+
+            <button class="btn btn-outline-success" type="submit">JOIN</button>
+          </form>
+        </div>
       </div>
     </nav>
-    <div class="container-fluid">
+    <div
+      style="background-color: rgb(121, 102, 139); width: 100%"
+      class="container-fluid"
+    >
       <h1>My First Bootstrap page</h1>
-      <p>This part is inside a .container-fluid class.</p>
-      <p>
-        The .container-fluid class provides a full width container, spanning the
-        entire width of the viewport.
-      </p>
+
+      <div
+        style="
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+        "
+      >
+        <img
+          style="width: 200px; height: 200px"
+          src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_1400,dpr_1.0/v1/attachments/generic_asset/asset/50218c41d277f7d85feeaf3efb4549bd-1599072608122/bg-signup-1400-x1.png"
+        />
+      </div>
     </div>
   </body>
 </html>
